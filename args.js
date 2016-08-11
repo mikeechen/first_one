@@ -6,7 +6,7 @@ function args2(){
   console.log(arguments.pop());
 }
 
-function scopeExample(){
+/*function scopeExample(){
   var num1=5;
   var num2=6;
       num3=7;
@@ -18,4 +18,4 @@ var num4 = 12345;
 console.log(num4);
 scopeExample();
 
-console.log(num3, num4);
+console.log(num3, num4);*/
