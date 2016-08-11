@@ -30,15 +30,18 @@ function daysInMonth(month){
        ['October', 31],
        ['November', 30],
        ['December',31]];
-       console.log(mon[0][-1]);
-  // for (var i = 0; i < mon.length; i++) {
-  //   if (month.toLowerCase()===mon[i].toLowerCase()) {
-  //     var days=mon[i][0];
-  //   }
-  // }
-  // for ( i = 1; i <= days ; i++) {
-  //   console.log(month+' '+i);
-  // }
+  for (var i = 0; i < mon.length; i++) {
+    if (month.toLowerCase()===mon[i][0].toLowerCase()) {
+      var days=mon[i][1];
+    }
+  }
+  if(days>0){
+    for ( var i2 = 1; i2 <= days ; i2++) {
+      console.log(mon[i][0]+' '+i2);
+    }
+  } else{
+    console.log('Please enter a month.');
+  }
 }
 
 function average(arr){
@@ -53,4 +56,4 @@ function average(arr){
 }
 
 
-daysInMonth('January');
+daysInMonth('JANUARY');
