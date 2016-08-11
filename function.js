@@ -33,11 +33,12 @@ function daysInMonth(month){
   for (var i = 0; i < mon.length; i++) {
     if (month.toLowerCase()===mon[i][0].toLowerCase()) {
       var days=mon[i][1];
+      var x=i;
     }
   }
   if(days>0){
     for ( var i2 = 1; i2 <= days ; i2++) {
-      console.log(mon[i][0]+' '+i2);
+      console.log(mon[x][0]+' '+i2);
     }
   } else{
     console.log('Please enter a month.');
