@@ -31,5 +31,12 @@ function adele(hel){
     }
 }
 
-arrmult();
-adele('Hello');
+// arrmult();
+// adele('Hello');
+var myArray=[];
+myArray.push('PeterthePan');
+console.log((((((((((((((myArray))))))))))))));
+myArray.push('PeterthePan');
+console.log(myArray);
+myArray.pop();
+console.log(myArray);
